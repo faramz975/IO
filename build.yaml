@@ -17,3 +17,12 @@
 #     artifact-name: corne_left_with_logging
 #
 ---
+include:
+  - board: nice_nano
+    shield: IO3_left
+  - board: nice_nano
+    shield: IO3_right
+  - board: nice_nano
+    shield: IO3_dongle
+    board: nice_nano
+    shield: settings_reset

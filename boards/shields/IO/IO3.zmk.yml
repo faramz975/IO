@@ -1,0 +1,13 @@
+file_format: "1"
+id: IO3
+name: IO3
+type: shield
+url: https://github.com/faramz975/io3/
+requires: [NRF52840]
+features:
+  - keys
+siblings:
+  - IO3_left
+  - IO3_right
+  - IO3_dongle
+  
