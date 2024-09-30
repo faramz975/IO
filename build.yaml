@@ -24,5 +24,5 @@ include:
     shield: IO3_right
   - board: nice_nano
     shield: IO3_dongle
-    board: nice_nano
+  - board: nice_nano
     shield: settings_reset
