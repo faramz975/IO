@@ -11,5 +11,5 @@ if SHIELD_IO_LEFT || SHIELD_IO_RIGHT || SHIELD_IO_DONGLE
 config ZMK_SPLIT
 	default y
 config ZMK_BLE
-	deafult y
+	default y
 endif
