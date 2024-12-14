@@ -35,10 +35,9 @@
 // |  CTRL/DELET |  ;  |  Q  |  J   |  K   |  X   |                                          |  B    |  M    |  W    |  V   |   Z   | CTRL/DELETE   |
 //				    |Lower|ALT/SPC|RAISE|                              |RAISE|ALT/SPC| Lower |
             bindings = <
-                &mt LGUI TAB    &kp LPAR  &kp RPAR  &kp PERIOD  &kp P   &kp Y  &mo LWR        		         &kp F  &kp G  &kp C  &kp R  &kp L  &mt LGUI BSPC 
-                &mt LSHIFT ESC  &kp A     &kp O     &kp E       &kp U   &kp I  &mt LALT SPACE 			 &kp D  &kp H  &kp T  &kp N  &kp S  &mt LSHIFT RET
-                &mt LCTRL DEL   &kp SEMI  &kp Q     &kp J       &kp K   &kp X  &mo RSE        		         &kp B  &kp M  &kp W  &kp V  &kp Z  &mt LCTRL DEL
-								&mo LWR &mt LALT SPACE &mo RSE 		 &mo RSE &mt LALT SPACE &mo LWR
+                &mt LGUI TAB    &kp LPAR  &kp RPAR  &kp PERIOD  &kp P   &kp Y  &mo LWR        		    &mo LWR          &kp F  &kp G  &kp C  &kp R  &kp L  &mt LGUI BSPC 
+                &mt LSHIFT ESC  &kp A     &kp O     &kp E       &kp U   &kp I  &mt LALT SPACE 		    &mt LALT SPACE   &kp D  &kp H  &kp T  &kp N  &kp S  &mt LSHIFT RET
+                &mt LCTRL DEL   &kp SEMI  &kp Q     &kp J       &kp K   &kp X  &mo RSE        		    &mo RSE          &kp B  &kp M  &kp W  &kp V  &kp Z  &mt LCTRL DEL
             >;
 
 
@@ -50,10 +49,9 @@
 // |       |   :  |   ^  |   ~  |   ?  |   &  |                                        |   .  |  1   |   2  |   3  |   +  |     |
 //                              | ADJ  |      |         |                     |        |      | ADJ  |
             bindings = <
-                &trans  &kp LBRC   &kp RBRC   &kp COMMA  &kp SQT    &kp DQT                           &kp ASTRK     &kp N7  &kp N8  &kp N9  &kp MINUS  &trans
-                &trans  &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT                         &kp FSLH      &kp N4  &kp N5  &kp N6  &kp N0     &trans
-                &trans  &kp COLON  &kp CARET  &kp TILDE  &kp QMARK  &kp AMPS                          &kp PERIOD    &kp N1  &kp N2  &kp N3  &kp PLUS   &trans
-							 &mo ADJ    &trans    &trans	     &trans   &trans	    &mo ADJ
+                &trans  &kp LBRC   &kp RBRC   &kp COMMA  &kp SQT    &kp DQT     &mo ADJ                &mo ADJ    &kp ASTRK     &kp N7  &kp N8  &kp N9  &kp MINUS  &trans
+                &trans  &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT   &trans                 &trans     &kp FSLH      &kp N4  &kp N5  &kp N6  &kp N0     &trans
+                &trans  &kp COLON  &kp CARET  &kp TILDE  &kp QMARK  &kp AMPS    &trans                 &trans     &kp PERIOD    &kp N1  &kp N2  &kp N3  &kp PLUS   &trans
             >;
 
         };
@@ -65,10 +63,9 @@
 //                             |      |      |  ADJ   |                                         |  ADJ   |      |       |
 
             bindings = <
-                &trans  &kp LBKT   &kp RBKT   &kp UP     &kp LT     &kp GT           	          &kp PSCRN  &kp F7  &kp F8  &kp F9  &kp UNDER  &trans
-                &trans  &kp EXCL   &kp LEFT   &kp DOWN   &kp RIGHT  &kp PRCNT        	          &kp BSLH   &kp F4  &kp F5  &kp F6  &kp F10    &trans
-                &trans  &kp COLON  &kp CARET  &kp PIPE   &kp F11    &kp F12          	  	  &kp PERIOD    &kp F1  &kp F2  &kp F3  &kp EQUAL  &trans
-						         &trans     &trans     &mo ADJ   &mo ADJ  &trans   &trans
+                &trans  &kp LBKT   &kp RBKT   &kp UP     &kp LT     &kp GT      &trans     	  &trans        &kp PSCRN  &kp F7  &kp F8  &kp F9  &kp UNDER  &trans
+                &trans  &kp EXCL   &kp LEFT   &kp DOWN   &kp RIGHT  &kp PRCNT   &trans     	  &trans        &kp BSLH   &kp F4  &kp F5  &kp F6  &kp F10    &trans
+                &trans  &kp COLON  &kp CARET  &kp PIPE   &kp F11    &kp F12     &mo ADJ     	  &mo ADJ	&kp PERIOD    &kp F1  &kp F2  &kp F3  &kp EQUAL  &trans
             >;
 
         };
@@ -80,10 +77,9 @@
 //                                      |      |BT_CLR_ALL|     |                         |       |BT_CLR_ALL|      |
 
             bindings = <
-                &trans  &bootloader &none         &none         &none  &tog DTO                  &none   &none  &none          &none          &bootloader  &trans
-                &trans  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &none  &none                     &none   &none  &bt BT_SEL 1   &bt BT_SEL 0   &bt BT_CLR   &trans
-                &kp CAPS &sys_reset &none         &none         &none  &none                     &none   &none  &none          &none          &sys_reset   &kp CAPS
-	                                            	        &none &bt BT_CLR_ALL &none &none &bt BT_CLR_ALL &none
+                &trans  &bootloader &none         &none         &none  &tog DTO	 &none          	 &none        &none   &none  &none          &none          &bootloader  &trans
+                &trans  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &none  &none     &bt BT_CLR_ALL          &bt BT_CLR_ALL      &none   &none  &bt BT_SEL 1   &bt BT_SEL 0   &bt BT_CLR   &trans
+                &kp CAPS &sys_reset &none         &none         &none  &none     &none          	 &none      &none   &none  &none          &none          &sys_reset   &kp CAPS
             >;
 
         };
@@ -95,10 +91,10 @@
 //                             |   4  |ALT/SPC|  5  |                                 | DEF |  6   |  7   |
 
             bindings = <
-                &kp L             &kp Q   &kp W   &kp E   &kp R    &kp T                        	   &kp Y    &kp U    &kp I        &kp O         &kp P     &trans
-                &kp CAPS          &kp A   &kp S   &kp D   &kp F    &kp G                                   &kp H    &kp J    &kp K        &kp L         &kp SEMI  &trans
-                &mt LSHIFT TILDE  &kp Z   &kp X   &kp C   &kp V    &kp B             		           &kp N    &kp M    &kp COMMA    &kp PERIOD    &kp FSLH  &trans
-		                                          &kp N4   &mt LALT SPACE   &kp N9        &to DEF  &kp N6   &kp N7 
+                &kp L             &kp Q   &kp W   &kp E   &kp R    &kp T     &kp N4                   &to DEF 	   &kp Y    &kp U    &kp I        &kp O         &kp P     &trans
+                &kp CAPS          &kp A   &kp S   &kp D   &kp F    &kp G     &mt LALT SPACE           &kp N6                    &kp H    &kp J    &kp K        &kp L         &kp SEMI  &trans
+                &mt LSHIFT TILDE  &kp Z   &kp X   &kp C   &kp V    &kp B     &kp N9        	      &kp N7           &kp N    &kp M    &kp COMMA    &kp PERIOD    &kp FSLH  &trans
+		                                                             
             >;
 
         };
