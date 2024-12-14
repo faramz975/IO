@@ -25,6 +25,7 @@
     };
 
     default_transform: keymap_transform_0 {
+        col-offset=<7>;
         compatible = "zmk,matrix-transform";
         rows = <3>;
         columns = <14>;
